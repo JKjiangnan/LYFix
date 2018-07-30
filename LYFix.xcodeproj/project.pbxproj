@@ -18,25 +18,25 @@
 		5F518D5721088D95008D4C5A /* LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5621088D95008D4C5A /* LYFix.m */; };
 		5F518D5A2108904A008D4C5A /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5921089049008D4C5A /* Aspects.m */; };
 		5F518D5D2109687C008D4C5A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5C2109687C008D4C5A /* TestViewController.m */; };
-		5F518D7221098A4F008D4C5A /* InstanceMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6421098A4F008D4C5A /* InstanceMethodCrash.js */; };
-		5F518D7321098A4F008D4C5A /* RunBeforeClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6521098A4F008D4C5A /* RunBeforeClassMethod.js */; };
-		5F518D7421098A4F008D4C5A /* RunClassMethodHasNoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6621098A4F008D4C5A /* RunClassMethodHasNoParams.js */; };
-		5F518D7521098A4F008D4C5A /* RunClassMethodHasOneParam.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6721098A4F008D4C5A /* RunClassMethodHasOneParam.js */; };
-		5F518D7621098A4F008D4C5A /* RunAfterInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6821098A4F008D4C5A /* RunAfterInstanceMethod.js */; };
-		5F518D7721098A4F008D4C5A /* RunBeforeInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6921098A4F008D4C5A /* RunBeforeInstanceMethod.js */; };
-		5F518D7821098A4F008D4C5A /* RunInstanceMethodHasMultipleParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6A21098A4F008D4C5A /* RunInstanceMethodHasMultipleParams.js */; };
-		5F518D7921098A4F008D4C5A /* RunInstanceMethodHasOneParam.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6B21098A4F008D4C5A /* RunInstanceMethodHasOneParam.js */; };
-		5F518D7A21098A4F008D4C5A /* RunInstanceMethodHasNoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6C21098A4F008D4C5A /* RunInstanceMethodHasNoParams.js */; };
-		5F518D7B21098A4F008D4C5A /* RunInstanceMethodHasTwoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6D21098A4F008D4C5A /* RunInstanceMethodHasTwoParams.js */; };
-		5F518D7C21098A4F008D4C5A /* RunClassMethodHasTwoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6E21098A4F008D4C5A /* RunClassMethodHasTwoParams.js */; };
-		5F518D7D21098A4F008D4C5A /* ClassMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D6F21098A4F008D4C5A /* ClassMethodCrash.js */; };
-		5F518D7E21098A4F008D4C5A /* RunClassMethodHasMultipleParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D7021098A4F008D4C5A /* RunClassMethodHasMultipleParams.js */; };
-		5F518D7F21098A4F008D4C5A /* RunAfterClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518D7121098A4F008D4C5A /* RunAfterClassMethod.js */; };
 		5F518D8F21098AD8008D4C5A /* LBYFixDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D8921098AD7008D4C5A /* LBYFixDemo3.m */; };
 		5F518D9021098AD8008D4C5A /* LBYFixDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D8C21098AD7008D4C5A /* LBYFixDemo2.m */; };
 		5F518D9121098AD8008D4C5A /* LBYFixDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D8E21098AD8008D4C5A /* LBYFixDemo.m */; };
 		5F518D972109C4D9008D4C5A /* NSInvocation+LYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */; };
-		5F518DE1210AF19F008D4C5A /* Test.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F518DE0210AF19F008D4C5A /* Test.js */; };
+		5F8C2990210F2F74007A99C9 /* InstanceMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2981210F2F73007A99C9 /* InstanceMethodCrash.js */; };
+		5F8C2991210F2F74007A99C9 /* RunBeforeClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2982210F2F73007A99C9 /* RunBeforeClassMethod.js */; };
+		5F8C2992210F2F74007A99C9 /* RunClassMethodHasNoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2983210F2F73007A99C9 /* RunClassMethodHasNoParams.js */; };
+		5F8C2993210F2F74007A99C9 /* Test.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2984210F2F73007A99C9 /* Test.js */; };
+		5F8C2994210F2F74007A99C9 /* RunClassMethodHasOneParam.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2985210F2F73007A99C9 /* RunClassMethodHasOneParam.js */; };
+		5F8C2995210F2F74007A99C9 /* RunAfterInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2986210F2F73007A99C9 /* RunAfterInstanceMethod.js */; };
+		5F8C2996210F2F74007A99C9 /* RunBeforeInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2987210F2F73007A99C9 /* RunBeforeInstanceMethod.js */; };
+		5F8C2997210F2F74007A99C9 /* RunInstanceMethodHasMultipleParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2988210F2F73007A99C9 /* RunInstanceMethodHasMultipleParams.js */; };
+		5F8C2998210F2F74007A99C9 /* RunInstanceMethodHasOneParam.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2989210F2F73007A99C9 /* RunInstanceMethodHasOneParam.js */; };
+		5F8C2999210F2F74007A99C9 /* RunInstanceMethodHasNoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C298A210F2F73007A99C9 /* RunInstanceMethodHasNoParams.js */; };
+		5F8C299A210F2F74007A99C9 /* RunInstanceMethodHasTwoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C298B210F2F73007A99C9 /* RunInstanceMethodHasTwoParams.js */; };
+		5F8C299B210F2F74007A99C9 /* RunClassMethodHasTwoParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C298C210F2F73007A99C9 /* RunClassMethodHasTwoParams.js */; };
+		5F8C299C210F2F74007A99C9 /* ClassMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C298D210F2F73007A99C9 /* ClassMethodCrash.js */; };
+		5F8C299D210F2F74007A99C9 /* RunClassMethodHasMultipleParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C298E210F2F73007A99C9 /* RunClassMethodHasMultipleParams.js */; };
+		5F8C299E210F2F74007A99C9 /* RunAfterClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C298F210F2F73007A99C9 /* RunAfterClassMethod.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,20 +79,6 @@
 		5F518D5921089049008D4C5A /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		5F518D5B2109687C008D4C5A /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		5F518D5C2109687C008D4C5A /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		5F518D6421098A4F008D4C5A /* InstanceMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = InstanceMethodCrash.js; sourceTree = "<group>"; };
-		5F518D6521098A4F008D4C5A /* RunBeforeClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunBeforeClassMethod.js; sourceTree = "<group>"; };
-		5F518D6621098A4F008D4C5A /* RunClassMethodHasNoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasNoParams.js; sourceTree = "<group>"; };
-		5F518D6721098A4F008D4C5A /* RunClassMethodHasOneParam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasOneParam.js; sourceTree = "<group>"; };
-		5F518D6821098A4F008D4C5A /* RunAfterInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunAfterInstanceMethod.js; sourceTree = "<group>"; };
-		5F518D6921098A4F008D4C5A /* RunBeforeInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunBeforeInstanceMethod.js; sourceTree = "<group>"; };
-		5F518D6A21098A4F008D4C5A /* RunInstanceMethodHasMultipleParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasMultipleParams.js; sourceTree = "<group>"; };
-		5F518D6B21098A4F008D4C5A /* RunInstanceMethodHasOneParam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasOneParam.js; sourceTree = "<group>"; };
-		5F518D6C21098A4F008D4C5A /* RunInstanceMethodHasNoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasNoParams.js; sourceTree = "<group>"; };
-		5F518D6D21098A4F008D4C5A /* RunInstanceMethodHasTwoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasTwoParams.js; sourceTree = "<group>"; };
-		5F518D6E21098A4F008D4C5A /* RunClassMethodHasTwoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasTwoParams.js; sourceTree = "<group>"; };
-		5F518D6F21098A4F008D4C5A /* ClassMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ClassMethodCrash.js; sourceTree = "<group>"; };
-		5F518D7021098A4F008D4C5A /* RunClassMethodHasMultipleParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasMultipleParams.js; sourceTree = "<group>"; };
-		5F518D7121098A4F008D4C5A /* RunAfterClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunAfterClassMethod.js; sourceTree = "<group>"; };
 		5F518D8921098AD7008D4C5A /* LBYFixDemo3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYFixDemo3.m; sourceTree = "<group>"; };
 		5F518D8A21098AD7008D4C5A /* LBYFixDemo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYFixDemo3.h; sourceTree = "<group>"; };
 		5F518D8B21098AD7008D4C5A /* LBYFixDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYFixDemo2.h; sourceTree = "<group>"; };
@@ -101,7 +87,21 @@
 		5F518D8E21098AD8008D4C5A /* LBYFixDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYFixDemo.m; sourceTree = "<group>"; };
 		5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+LYAddtion.h"; sourceTree = "<group>"; };
 		5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+LYAddtion.m"; sourceTree = "<group>"; };
-		5F518DE0210AF19F008D4C5A /* Test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test.js; sourceTree = "<group>"; };
+		5F8C2981210F2F73007A99C9 /* InstanceMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = InstanceMethodCrash.js; sourceTree = "<group>"; };
+		5F8C2982210F2F73007A99C9 /* RunBeforeClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunBeforeClassMethod.js; sourceTree = "<group>"; };
+		5F8C2983210F2F73007A99C9 /* RunClassMethodHasNoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasNoParams.js; sourceTree = "<group>"; };
+		5F8C2984210F2F73007A99C9 /* Test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test.js; sourceTree = "<group>"; };
+		5F8C2985210F2F73007A99C9 /* RunClassMethodHasOneParam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasOneParam.js; sourceTree = "<group>"; };
+		5F8C2986210F2F73007A99C9 /* RunAfterInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunAfterInstanceMethod.js; sourceTree = "<group>"; };
+		5F8C2987210F2F73007A99C9 /* RunBeforeInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunBeforeInstanceMethod.js; sourceTree = "<group>"; };
+		5F8C2988210F2F73007A99C9 /* RunInstanceMethodHasMultipleParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasMultipleParams.js; sourceTree = "<group>"; };
+		5F8C2989210F2F73007A99C9 /* RunInstanceMethodHasOneParam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasOneParam.js; sourceTree = "<group>"; };
+		5F8C298A210F2F73007A99C9 /* RunInstanceMethodHasNoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasNoParams.js; sourceTree = "<group>"; };
+		5F8C298B210F2F73007A99C9 /* RunInstanceMethodHasTwoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunInstanceMethodHasTwoParams.js; sourceTree = "<group>"; };
+		5F8C298C210F2F73007A99C9 /* RunClassMethodHasTwoParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasTwoParams.js; sourceTree = "<group>"; };
+		5F8C298D210F2F73007A99C9 /* ClassMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ClassMethodCrash.js; sourceTree = "<group>"; };
+		5F8C298E210F2F73007A99C9 /* RunClassMethodHasMultipleParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunClassMethodHasMultipleParams.js; sourceTree = "<group>"; };
+		5F8C298F210F2F73007A99C9 /* RunAfterClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RunAfterClassMethod.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,10 +154,10 @@
 			children = (
 				5F518CDF210883CE008D4C5A /* AppDelegate.h */,
 				5F518CE0210883CE008D4C5A /* AppDelegate.m */,
-				5F518D6321098A4F008D4C5A /* JS */,
 				5F518CE2210883CE008D4C5A /* ViewController.h */,
 				5F518CE3210883CE008D4C5A /* ViewController.m */,
 				5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */,
+				5F8C2980210F2F73007A99C9 /* JS */,
 				5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */,
 				5F518D5821089049008D4C5A /* Aspects.h */,
 				5F518D5921089049008D4C5A /* Aspects.m */,
@@ -198,27 +198,26 @@
 			path = LYFixUITests;
 			sourceTree = "<group>";
 		};
-		5F518D6321098A4F008D4C5A /* JS */ = {
+		5F8C2980210F2F73007A99C9 /* JS */ = {
 			isa = PBXGroup;
 			children = (
-				5F518D6421098A4F008D4C5A /* InstanceMethodCrash.js */,
-				5F518D6521098A4F008D4C5A /* RunBeforeClassMethod.js */,
-				5F518D6621098A4F008D4C5A /* RunClassMethodHasNoParams.js */,
-				5F518D6721098A4F008D4C5A /* RunClassMethodHasOneParam.js */,
-				5F518D6821098A4F008D4C5A /* RunAfterInstanceMethod.js */,
-				5F518D6921098A4F008D4C5A /* RunBeforeInstanceMethod.js */,
-				5F518D6A21098A4F008D4C5A /* RunInstanceMethodHasMultipleParams.js */,
-				5F518D6B21098A4F008D4C5A /* RunInstanceMethodHasOneParam.js */,
-				5F518D6C21098A4F008D4C5A /* RunInstanceMethodHasNoParams.js */,
-				5F518D6D21098A4F008D4C5A /* RunInstanceMethodHasTwoParams.js */,
-				5F518D6E21098A4F008D4C5A /* RunClassMethodHasTwoParams.js */,
-				5F518D6F21098A4F008D4C5A /* ClassMethodCrash.js */,
-				5F518D7021098A4F008D4C5A /* RunClassMethodHasMultipleParams.js */,
-				5F518DE0210AF19F008D4C5A /* Test.js */,
-				5F518D7121098A4F008D4C5A /* RunAfterClassMethod.js */,
+				5F8C2981210F2F73007A99C9 /* InstanceMethodCrash.js */,
+				5F8C2982210F2F73007A99C9 /* RunBeforeClassMethod.js */,
+				5F8C2983210F2F73007A99C9 /* RunClassMethodHasNoParams.js */,
+				5F8C2984210F2F73007A99C9 /* Test.js */,
+				5F8C2985210F2F73007A99C9 /* RunClassMethodHasOneParam.js */,
+				5F8C2986210F2F73007A99C9 /* RunAfterInstanceMethod.js */,
+				5F8C2987210F2F73007A99C9 /* RunBeforeInstanceMethod.js */,
+				5F8C2988210F2F73007A99C9 /* RunInstanceMethodHasMultipleParams.js */,
+				5F8C2989210F2F73007A99C9 /* RunInstanceMethodHasOneParam.js */,
+				5F8C298A210F2F73007A99C9 /* RunInstanceMethodHasNoParams.js */,
+				5F8C298B210F2F73007A99C9 /* RunInstanceMethodHasTwoParams.js */,
+				5F8C298C210F2F73007A99C9 /* RunClassMethodHasTwoParams.js */,
+				5F8C298D210F2F73007A99C9 /* ClassMethodCrash.js */,
+				5F8C298E210F2F73007A99C9 /* RunClassMethodHasMultipleParams.js */,
+				5F8C298F210F2F73007A99C9 /* RunAfterClassMethod.js */,
 			);
-			name = JS;
-			path = "../../../../Downloads/LBYFix-master 2/LBYFix/JS";
+			path = JS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,24 +323,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F518D7221098A4F008D4C5A /* InstanceMethodCrash.js in Resources */,
-				5F518D7721098A4F008D4C5A /* RunBeforeInstanceMethod.js in Resources */,
-				5F518D7A21098A4F008D4C5A /* RunInstanceMethodHasNoParams.js in Resources */,
-				5F518D7621098A4F008D4C5A /* RunAfterInstanceMethod.js in Resources */,
-				5F518D7521098A4F008D4C5A /* RunClassMethodHasOneParam.js in Resources */,
+				5F8C2993210F2F74007A99C9 /* Test.js in Resources */,
+				5F8C2990210F2F74007A99C9 /* InstanceMethodCrash.js in Resources */,
+				5F8C2997210F2F74007A99C9 /* RunInstanceMethodHasMultipleParams.js in Resources */,
+				5F8C2995210F2F74007A99C9 /* RunAfterInstanceMethod.js in Resources */,
+				5F8C2998210F2F74007A99C9 /* RunInstanceMethodHasOneParam.js in Resources */,
+				5F8C2994210F2F74007A99C9 /* RunClassMethodHasOneParam.js in Resources */,
+				5F8C299D210F2F74007A99C9 /* RunClassMethodHasMultipleParams.js in Resources */,
+				5F8C299C210F2F74007A99C9 /* ClassMethodCrash.js in Resources */,
 				5F518CEC210883CF008D4C5A /* LaunchScreen.storyboard in Resources */,
-				5F518DE1210AF19F008D4C5A /* Test.js in Resources */,
-				5F518D7B21098A4F008D4C5A /* RunInstanceMethodHasTwoParams.js in Resources */,
-				5F518D7821098A4F008D4C5A /* RunInstanceMethodHasMultipleParams.js in Resources */,
-				5F518D7421098A4F008D4C5A /* RunClassMethodHasNoParams.js in Resources */,
-				5F518D7E21098A4F008D4C5A /* RunClassMethodHasMultipleParams.js in Resources */,
-				5F518D7F21098A4F008D4C5A /* RunAfterClassMethod.js in Resources */,
+				5F8C299E210F2F74007A99C9 /* RunAfterClassMethod.js in Resources */,
+				5F8C2992210F2F74007A99C9 /* RunClassMethodHasNoParams.js in Resources */,
 				5F518CE9210883CF008D4C5A /* Assets.xcassets in Resources */,
-				5F518D7921098A4F008D4C5A /* RunInstanceMethodHasOneParam.js in Resources */,
 				5F518CE7210883CE008D4C5A /* Main.storyboard in Resources */,
-				5F518D7D21098A4F008D4C5A /* ClassMethodCrash.js in Resources */,
-				5F518D7C21098A4F008D4C5A /* RunClassMethodHasTwoParams.js in Resources */,
-				5F518D7321098A4F008D4C5A /* RunBeforeClassMethod.js in Resources */,
+				5F8C2999210F2F74007A99C9 /* RunInstanceMethodHasNoParams.js in Resources */,
+				5F8C2991210F2F74007A99C9 /* RunBeforeClassMethod.js in Resources */,
+				5F8C299B210F2F74007A99C9 /* RunClassMethodHasTwoParams.js in Resources */,
+				5F8C299A210F2F74007A99C9 /* RunInstanceMethodHasTwoParams.js in Resources */,
+				5F8C2996210F2F74007A99C9 /* RunBeforeInstanceMethod.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
