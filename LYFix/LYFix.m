@@ -32,7 +32,7 @@
     context[@"runMethod"] = ^id(NSString * className, NSString *selectorName, NSArray *arguments) {
         return [self runWithClassname:className selector:selectorName arguments:arguments];
     };
-    context[@"runInstanceMethod"] = ^id(JSValue *instance, NSString *selectorName, NSArray *arguments) {
+    context[@"runInstanceMethod"] = ^id(id instance, NSString *selectorName, NSArray *arguments) {
         NSLog(@"xly--%@",@"^^^^^");
       
         return [self runWithInstance:instance selector:selectorName arguments:arguments];
@@ -47,8 +47,8 @@
     [self context][@"setInvocationArgumentAtIndex"] = ^(NSInvocation *invocation, id argument,NSInteger index) {
         [invocation setMyArgument:argument atIndex:index];
     };
-    [self context][@"setInvocationReturnValue"] = ^(NSInvocation *invocation, JSValue *returnValue) {
-        invocation.returnValue_obj = returnValue.toObject;
+    [self context][@"setInvocationReturnValue"] = ^(NSInvocation *invocation, id returnValue) {
+        invocation.returnValue_obj = returnValue;
     };
     context[@"runError"] = ^(NSString *instanceName, NSString *selectorName) {
         NSLog(@"runError: instanceName = %@, selectorName = %@", instanceName, selectorName);

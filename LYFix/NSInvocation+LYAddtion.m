@@ -53,10 +53,7 @@ type result = [returnValue_obj method]; \
 
 
 - (id)returnValue_obj {
-    id ret = objc_getAssociatedObject(self, _cmd);
-    if (ret) {
-        return ret;
-    }
+
     NSMethodSignature *sig = self.methodSignature;
     NSInvocation *inv = self;
     NSUInteger length = [sig methodReturnLength];
@@ -128,6 +125,7 @@ return @(ret); \
 
 
 - (void)setMyArgument:(id)obj atIndex:(NSInteger)argumentIndex {
+    objc_setAssociatedObject(self, &argumentIndex, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 #define set_with_args_index(_index_, _type_, _sel_) \
 do { \
 _type_ arg; \
@@ -350,7 +348,17 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
     NSAssert(!unsupportedType, @"arg unsupportedType");
 }
 
+- (id)myArgumentAtIndex:(NSUInteger)index {
+    NSUInteger count = [self.methodSignature numberOfArguments];
+    NSInteger argumentIndex = index + 2;
+    if (argumentIndex >= count) {
+        return nil;
+    }
+    return [self argumentAtIndex:argumentIndex];
+}
+
 - (void)setArguments:(NSArray *)arguments {
+    objc_setAssociatedObject(self, @selector(arguments), arguments, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     for (int index = 0; index < arguments.count; index++) {
         [self setMyArgument:arguments[index] atIndex:index];
     }
@@ -362,15 +370,6 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
         [argumentsArray addObject:[self argumentAtIndex:idx] ?: NSNull.null];
     }
     return [argumentsArray copy];
-}
-
-- (id)myArgumentAtIndex:(NSUInteger)index {
-    NSUInteger count = [self.methodSignature numberOfArguments];
-    NSInteger argumentIndex = index + 2;
-    if (argumentIndex >= count) {
-        return nil;
-    }
-    return [self argumentAtIndex:argumentIndex];
 }
 
 - (id)argumentAtIndex:(NSUInteger)index {

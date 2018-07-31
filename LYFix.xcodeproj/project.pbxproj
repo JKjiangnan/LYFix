@@ -18,9 +18,6 @@
 		5F518D5721088D95008D4C5A /* LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5621088D95008D4C5A /* LYFix.m */; };
 		5F518D5A2108904A008D4C5A /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5921089049008D4C5A /* Aspects.m */; };
 		5F518D5D2109687C008D4C5A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5C2109687C008D4C5A /* TestViewController.m */; };
-		5F518D8F21098AD8008D4C5A /* LBYFixDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D8921098AD7008D4C5A /* LBYFixDemo3.m */; };
-		5F518D9021098AD8008D4C5A /* LBYFixDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D8C21098AD7008D4C5A /* LBYFixDemo2.m */; };
-		5F518D9121098AD8008D4C5A /* LBYFixDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D8E21098AD8008D4C5A /* LBYFixDemo.m */; };
 		5F518D972109C4D9008D4C5A /* NSInvocation+LYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */; };
 		5F8C2990210F2F74007A99C9 /* InstanceMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2981210F2F73007A99C9 /* InstanceMethodCrash.js */; };
 		5F8C2991210F2F74007A99C9 /* RunBeforeClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2982210F2F73007A99C9 /* RunBeforeClassMethod.js */; };
@@ -79,12 +76,6 @@
 		5F518D5921089049008D4C5A /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		5F518D5B2109687C008D4C5A /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		5F518D5C2109687C008D4C5A /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		5F518D8921098AD7008D4C5A /* LBYFixDemo3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYFixDemo3.m; sourceTree = "<group>"; };
-		5F518D8A21098AD7008D4C5A /* LBYFixDemo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYFixDemo3.h; sourceTree = "<group>"; };
-		5F518D8B21098AD7008D4C5A /* LBYFixDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYFixDemo2.h; sourceTree = "<group>"; };
-		5F518D8C21098AD7008D4C5A /* LBYFixDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYFixDemo2.m; sourceTree = "<group>"; };
-		5F518D8D21098AD8008D4C5A /* LBYFixDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYFixDemo.h; sourceTree = "<group>"; };
-		5F518D8E21098AD8008D4C5A /* LBYFixDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYFixDemo.m; sourceTree = "<group>"; };
 		5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+LYAddtion.h"; sourceTree = "<group>"; };
 		5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+LYAddtion.m"; sourceTree = "<group>"; };
 		5F8C2981210F2F73007A99C9 /* InstanceMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = InstanceMethodCrash.js; sourceTree = "<group>"; };
@@ -156,8 +147,8 @@
 				5F518CE0210883CE008D4C5A /* AppDelegate.m */,
 				5F518CE2210883CE008D4C5A /* ViewController.h */,
 				5F518CE3210883CE008D4C5A /* ViewController.m */,
-				5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */,
 				5F8C2980210F2F73007A99C9 /* JS */,
+				5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */,
 				5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */,
 				5F518D5821089049008D4C5A /* Aspects.h */,
 				5F518D5921089049008D4C5A /* Aspects.m */,
@@ -165,12 +156,6 @@
 				5F518D5621088D95008D4C5A /* LYFix.m */,
 				5F518D5B2109687C008D4C5A /* TestViewController.h */,
 				5F518D5C2109687C008D4C5A /* TestViewController.m */,
-				5F518D8D21098AD8008D4C5A /* LBYFixDemo.h */,
-				5F518D8E21098AD8008D4C5A /* LBYFixDemo.m */,
-				5F518D8B21098AD7008D4C5A /* LBYFixDemo2.h */,
-				5F518D8C21098AD7008D4C5A /* LBYFixDemo2.m */,
-				5F518D8A21098AD7008D4C5A /* LBYFixDemo3.h */,
-				5F518D8921098AD7008D4C5A /* LBYFixDemo3.m */,
 				5F518CE5210883CE008D4C5A /* Main.storyboard */,
 				5F518CE8210883CF008D4C5A /* Assets.xcassets */,
 				5F518CEA210883CF008D4C5A /* LaunchScreen.storyboard */,
@@ -201,10 +186,10 @@
 		5F8C2980210F2F73007A99C9 /* JS */ = {
 			isa = PBXGroup;
 			children = (
+				5F8C2984210F2F73007A99C9 /* Test.js */,
 				5F8C2981210F2F73007A99C9 /* InstanceMethodCrash.js */,
 				5F8C2982210F2F73007A99C9 /* RunBeforeClassMethod.js */,
 				5F8C2983210F2F73007A99C9 /* RunClassMethodHasNoParams.js */,
-				5F8C2984210F2F73007A99C9 /* Test.js */,
 				5F8C2985210F2F73007A99C9 /* RunClassMethodHasOneParam.js */,
 				5F8C2986210F2F73007A99C9 /* RunAfterInstanceMethod.js */,
 				5F8C2987210F2F73007A99C9 /* RunBeforeInstanceMethod.js */,
@@ -366,15 +351,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F518D5D2109687C008D4C5A /* TestViewController.m in Sources */,
-				5F518D9121098AD8008D4C5A /* LBYFixDemo.m in Sources */,
 				5F518D5A2108904A008D4C5A /* Aspects.m in Sources */,
 				5F518D972109C4D9008D4C5A /* NSInvocation+LYAddtion.m in Sources */,
 				5F518CE4210883CE008D4C5A /* ViewController.m in Sources */,
 				5F518CEF210883CF008D4C5A /* main.m in Sources */,
 				5F518D5721088D95008D4C5A /* LYFix.m in Sources */,
-				5F518D8F21098AD8008D4C5A /* LBYFixDemo3.m in Sources */,
 				5F518CE1210883CE008D4C5A /* AppDelegate.m in Sources */,
-				5F518D9021098AD8008D4C5A /* LBYFixDemo2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
