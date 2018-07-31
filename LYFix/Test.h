@@ -29,6 +29,8 @@
 
 + (NSInteger)runClassMethod:(NSString *)str;
 
++ (NSArray *)runWithParams:(NSArray *)array;
+
 + (void)log;
 
 @end

@@ -34,7 +34,7 @@
         }
     });
 
-    NSArray *runArray = @[@"runClassMethod",@"runInstanceMethod",@"runWithInstanceMethod"];
+    NSArray *runArray = @[@"runClassMethod",@"runInstanceMethod",@"runWithInstanceMethod",@"runWithParams"];
     [self.dataSource addObjectsFromArray:runArray];
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -87,6 +87,12 @@
         NSString *jsPath = [[NSBundle mainBundle] pathForResource:js ofType:@"js"];
         NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
         [LYFix evalString:jsString];
+    } else if ([js isEqualToString:@"runWithParams"]) {
+        NSString *jsPath = [[NSBundle mainBundle] pathForResource:js ofType:@"js"];
+        NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
+        [LYFix evalString:jsString];
+       NSArray *arr =  [Test runWithParams:@[@"2222"]];
+        NSLog(@"xly--%@",arr);
     }
     else {
         [LYFix runWithClassname:@"Test" selector:js arguments:nil];

@@ -125,7 +125,7 @@ return @(ret); \
 
 
 - (void)setMyArgument:(id)obj atIndex:(NSInteger)argumentIndex {
-    objc_setAssociatedObject(self, &argumentIndex, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    objc_setAssociatedObject(self, &argumentIndex, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 #define set_with_args_index(_index_, _type_, _sel_) \
 do { \
 _type_ arg; \
@@ -344,7 +344,7 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
             unsupportedType = YES;
         } break;
     }
-    
+    [self retainArguments];
     NSAssert(!unsupportedType, @"arg unsupportedType");
 }
 
@@ -358,10 +358,10 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
 }
 
 - (void)setArguments:(NSArray *)arguments {
-    objc_setAssociatedObject(self, @selector(arguments), arguments, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     for (int index = 0; index < arguments.count; index++) {
         [self setMyArgument:arguments[index] atIndex:index];
     }
+    
 }
 
 - (NSArray *)arguments {

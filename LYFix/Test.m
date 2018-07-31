@@ -71,7 +71,10 @@
     NSLog(@"xly--%@",NSStringFromSelector(_cmd));
     return str.length;
 }
-
++ (NSArray *)runWithParams:(NSArray *)array {
+    NSLog(@"xly--%@",array);
+    return array;
+}
 + (void)log {
     NSLog(@"xly--%@",@"^^^^^^^^^^^^^^^^^^^^^^^");
 }

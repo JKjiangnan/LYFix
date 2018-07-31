@@ -35,6 +35,7 @@
 		5F8C29C921103F50007A99C9 /* runClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29C721103F4F007A99C9 /* runClassMethod.js */; };
 		5F8C29CA21103F50007A99C9 /* runInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29C821103F50007A99C9 /* runInstanceMethod.js */; };
 		5F8C29CC21104361007A99C9 /* runWithInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29CB21104360007A99C9 /* runWithInstanceMethod.js */; };
+		5F8C29CE2110617C007A99C9 /* runWithParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29CD2110617C007A99C9 /* runWithParams.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		5F8C29C721103F4F007A99C9 /* runClassMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runClassMethod.js; sourceTree = "<group>"; };
 		5F8C29C821103F50007A99C9 /* runInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runInstanceMethod.js; sourceTree = "<group>"; };
 		5F8C29CB21104360007A99C9 /* runWithInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runWithInstanceMethod.js; sourceTree = "<group>"; };
+		5F8C29CD2110617C007A99C9 /* runWithParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runWithParams.js; sourceTree = "<group>"; };
 		637285A38C4532009A97E4C0 /* libPods-LYFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E38880328684FFEBB5ADCD /* Pods-LYFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.debug.xcconfig"; sourceTree = "<group>"; };
 		D06D0509EB31CA7AD27C6C85 /* Pods-LYFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				5F8C29C721103F4F007A99C9 /* runClassMethod.js */,
 				5F8C29C821103F50007A99C9 /* runInstanceMethod.js */,
 				5F8C29CB21104360007A99C9 /* runWithInstanceMethod.js */,
+				5F8C29CD2110617C007A99C9 /* runWithParams.js */,
 			);
 			path = JS;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				5F8C29CC21104361007A99C9 /* runWithInstanceMethod.js in Resources */,
 				5F8C29A421100969007A99C9 /* runInsteadClassMethod.js in Resources */,
 				5F8C299C210F2F74007A99C9 /* calssMethodCrash.js in Resources */,
+				5F8C29CE2110617C007A99C9 /* runWithParams.js in Resources */,
 				5F518CEC210883CF008D4C5A /* LaunchScreen.storyboard in Resources */,
 				5F8C299E210F2F74007A99C9 /* runAfterClassMethod.js in Resources */,
 				5F518CE9210883CF008D4C5A /* Assets.xcassets in Resources */,
