@@ -17,7 +17,6 @@
 		5F518CF9210883CF008D4C5A /* LYFixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518CF8210883CF008D4C5A /* LYFixTests.m */; };
 		5F518D04210883CF008D4C5A /* LYFixUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D03210883CF008D4C5A /* LYFixUITests.m */; };
 		5F518D5721088D95008D4C5A /* LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5621088D95008D4C5A /* LYFix.m */; };
-		5F518D5D2109687C008D4C5A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D5C2109687C008D4C5A /* TestViewController.m */; };
 		5F518D972109C4D9008D4C5A /* NSInvocation+LYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */; };
 		5F8C2990210F2F74007A99C9 /* instanceMethodCrash.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2981210F2F73007A99C9 /* instanceMethodCrash.js */; };
 		5F8C2991210F2F74007A99C9 /* runBeforeClassMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C2982210F2F73007A99C9 /* runBeforeClassMethod.js */; };
@@ -32,6 +31,8 @@
 		5F8C29BD2110320E007A99C9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29BA2110320E007A99C9 /* README.md */; };
 		5F8C29BE2110320E007A99C9 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C29BB2110320E007A99C9 /* Aspects.m */; };
 		5F8C29C12110323D007A99C9 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C29C02110323D007A99C9 /* Test.m */; };
+		5F8C29C4211036FC007A99C9 /* changePrames.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29C2211036FC007A99C9 /* changePrames.js */; };
+		5F8C29C5211036FC007A99C9 /* changeReturnValue.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29C3211036FC007A99C9 /* changeReturnValue.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +71,6 @@
 		5F518D05210883CF008D4C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F518D5521088D95008D4C5A /* LYFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFix.h; sourceTree = "<group>"; };
 		5F518D5621088D95008D4C5A /* LYFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFix.m; sourceTree = "<group>"; };
-		5F518D5B2109687C008D4C5A /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		5F518D5C2109687C008D4C5A /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+LYAddtion.h"; sourceTree = "<group>"; };
 		5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+LYAddtion.m"; sourceTree = "<group>"; };
 		5F8C2981210F2F73007A99C9 /* instanceMethodCrash.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = instanceMethodCrash.js; sourceTree = "<group>"; };
@@ -89,6 +88,8 @@
 		5F8C29BB2110320E007A99C9 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		5F8C29BF2110323D007A99C9 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		5F8C29C02110323D007A99C9 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		5F8C29C2211036FC007A99C9 /* changePrames.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = changePrames.js; sourceTree = "<group>"; };
+		5F8C29C3211036FC007A99C9 /* changeReturnValue.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = changeReturnValue.js; sourceTree = "<group>"; };
 		637285A38C4532009A97E4C0 /* libPods-LYFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E38880328684FFEBB5ADCD /* Pods-LYFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.debug.xcconfig"; sourceTree = "<group>"; };
 		D06D0509EB31CA7AD27C6C85 /* Pods-LYFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,8 +158,6 @@
 				5F518D5621088D95008D4C5A /* LYFix.m */,
 				5F8C29BF2110323D007A99C9 /* Test.h */,
 				5F8C29C02110323D007A99C9 /* Test.m */,
-				5F518D5B2109687C008D4C5A /* TestViewController.h */,
-				5F518D5C2109687C008D4C5A /* TestViewController.m */,
 				5F518CE5210883CE008D4C5A /* Main.storyboard */,
 				5F518CE8210883CF008D4C5A /* Assets.xcassets */,
 				5F518CEA210883CF008D4C5A /* LaunchScreen.storyboard */,
@@ -198,6 +197,8 @@
 				5F8C298F210F2F73007A99C9 /* runAfterClassMethod.js */,
 				5F8C29A221100969007A99C9 /* runInsteadClassMethod.js */,
 				5F8C29A321100969007A99C9 /* runInsteadInstanceMethod.js */,
+				5F8C29C2211036FC007A99C9 /* changePrames.js */,
+				5F8C29C3211036FC007A99C9 /* changeReturnValue.js */,
 			);
 			path = JS;
 			sourceTree = "<group>";
@@ -336,6 +337,7 @@
 			files = (
 				5F8C2993210F2F74007A99C9 /* Test.js in Resources */,
 				5F8C29A521100969007A99C9 /* runInsteadInstanceMethod.js in Resources */,
+				5F8C29C5211036FC007A99C9 /* changeReturnValue.js in Resources */,
 				5F8C2990210F2F74007A99C9 /* instanceMethodCrash.js in Resources */,
 				5F8C2995210F2F74007A99C9 /* runAfterInstanceMethod.js in Resources */,
 				5F8C29A421100969007A99C9 /* runInsteadClassMethod.js in Resources */,
@@ -346,6 +348,7 @@
 				5F8C29BC2110320E007A99C9 /* LICENSE in Resources */,
 				5F518CE7210883CE008D4C5A /* Main.storyboard in Resources */,
 				5F8C29BD2110320E007A99C9 /* README.md in Resources */,
+				5F8C29C4211036FC007A99C9 /* changePrames.js in Resources */,
 				5F8C2991210F2F74007A99C9 /* runBeforeClassMethod.js in Resources */,
 				5F8C2996210F2F74007A99C9 /* runBeforeInstanceMethod.js in Resources */,
 			);
@@ -393,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F518D5D2109687C008D4C5A /* TestViewController.m in Sources */,
 				5F8C29C12110323D007A99C9 /* Test.m in Sources */,
 				5F518D972109C4D9008D4C5A /* NSInvocation+LYAddtion.m in Sources */,
 				5F518CE4210883CE008D4C5A /* ViewController.m in Sources */,

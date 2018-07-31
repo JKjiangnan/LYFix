@@ -48,6 +48,19 @@
     NSLog(@"xly--%@",NSStringFromSelector(_cmd));
 }
 
+- (NSString *)changePrames:(NSString *)params {
+    NSLog(@"xly--%@",params);
+    NSLog(@"xly--%@",NSStringFromSelector(_cmd));
+
+    return params;
+}
+
++ (NSString *)changeReturnValue:(NSString *)params {
+    NSLog(@"xly--%@",params);
+    NSLog(@"xly--%@",NSStringFromSelector(_cmd));
+
+    return params;
+}
 
 + (void)log {
     NSLog(@"xly--%@",@"^^^^^^^^^^^^^^^^^^^^^^^");

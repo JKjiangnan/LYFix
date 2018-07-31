@@ -22,7 +22,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@"instanceMethodCrash",@"calssMethodCrash",@"runBeforeClassMethod",@"runBeforeInstanceMethod",@"runAfterInstanceMethod",@"runAfterClassMethod",@"runInsteadClassMethod",@"runInsteadInstanceMethod"];
+    self.dataSource = @[@"instanceMethodCrash",@"calssMethodCrash",@"runBeforeClassMethod",@"runBeforeInstanceMethod",@"runAfterInstanceMethod",@"runAfterClassMethod",@"runInsteadClassMethod",@"runInsteadInstanceMethod",@"changePrames",@"changeReturnValue"];
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        for (NSString *js1 in self.dataSource) {
+            NSString *jsPath = [[NSBundle mainBundle] pathForResource:js1 ofType:@"js"];
+            NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
+            [LYFix evalString:jsString];
+        }
+    });
+    
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
@@ -46,22 +56,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *js = self.dataSource[indexPath.row];
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        for (NSString *js1 in self.dataSource) {
-            NSString *jsPath = [[NSBundle mainBundle] pathForResource:js1 ofType:@"js"];
-            NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
-            [LYFix evalString:jsString];
-        }
-    
-    });
-    
+
     if ([js isEqualToString:@"instanceMethodCrash"]) {
         Test *te = [[Test alloc] init];
         [te instanceMethodCrash:nil];
     } else if ([js isEqualToString:@"calssMethodCrash"]) {
         [Test calssMethodCrash:nil];
-    } else {
+    } else if ([js isEqualToString:@"changePrames"]) {
+        Test *te = [[Test alloc] init];
+        NSString *str = [te changePrames:nil];
+        NSLog(@"new params xly--%@",str);
+    } else if ([js isEqualToString:@"changeReturnValue"]) {
+        NSString *str = [Test changeReturnValue:nil];
+        NSLog(@"new  returenValue xly--%@",str);
+    }
+    else {
         [LYFix runWithClassname:@"Test" selector:js arguments:nil];
     }
 }

@@ -22,6 +22,9 @@
 + (void)runInsteadClassMethod;
 - (void)runInsteadInstanceMethod;
 
+- (NSString *)changePrames:(NSString *)params;
++ (NSString *)changeReturnValue:(NSString *)params;
+
 + (void)log;
 
 @end
