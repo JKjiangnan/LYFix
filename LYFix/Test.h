@@ -25,6 +25,10 @@
 - (NSString *)changePrames:(NSString *)params;
 + (NSString *)changeReturnValue:(NSString *)params;
 
+- (NSString *)runInstanceMethod:(NSString *)str;
+
++ (NSInteger)runClassMethod:(NSString *)str;
+
 + (void)log;
 
 @end

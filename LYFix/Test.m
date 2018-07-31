@@ -62,6 +62,16 @@
     return params;
 }
 
+- (NSString *)runInstanceMethod:(NSString *)str {
+    NSLog(@"xly--%@",NSStringFromSelector(_cmd));
+    return str;
+}
+
++ (NSInteger)runClassMethod:(NSString *)str {
+    NSLog(@"xly--%@",NSStringFromSelector(_cmd));
+    return str.length;
+}
+
 + (void)log {
     NSLog(@"xly--%@",@"^^^^^^^^^^^^^^^^^^^^^^^");
 }
