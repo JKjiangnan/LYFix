@@ -150,12 +150,8 @@
 				5F518CE0210883CE008D4C5A /* AppDelegate.m */,
 				5F518CE2210883CE008D4C5A /* ViewController.h */,
 				5F518CE3210883CE008D4C5A /* ViewController.m */,
-				5F8C29B72110320E007A99C9 /* AspectsFix */,
+				5F8C29C621103D0E007A99C9 /* LYFix */,
 				5F8C2980210F2F73007A99C9 /* JS */,
-				5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */,
-				5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */,
-				5F518D5521088D95008D4C5A /* LYFix.h */,
-				5F518D5621088D95008D4C5A /* LYFix.m */,
 				5F8C29BF2110323D007A99C9 /* Test.h */,
 				5F8C29C02110323D007A99C9 /* Test.m */,
 				5F518CE5210883CE008D4C5A /* Main.storyboard */,
@@ -212,6 +208,18 @@
 				5F8C29BB2110320E007A99C9 /* Aspects.m */,
 			);
 			path = AspectsFix;
+			sourceTree = "<group>";
+		};
+		5F8C29C621103D0E007A99C9 /* LYFix */ = {
+			isa = PBXGroup;
+			children = (
+				5F518D5521088D95008D4C5A /* LYFix.h */,
+				5F518D5621088D95008D4C5A /* LYFix.m */,
+				5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */,
+				5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */,
+				5F8C29B72110320E007A99C9 /* AspectsFix */,
+			);
+			path = LYFix;
 			sourceTree = "<group>";
 		};
 		87E1CEA29764AF541A67AD10 /* Frameworks */ = {

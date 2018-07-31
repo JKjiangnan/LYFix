@@ -15,7 +15,6 @@
 + (JSContext *)context;
 + (id)evalString:(NSString *)jsString;
 
-
 + (id)runWithClassname:(NSString *)className selector:(NSString *)selector arguments:(NSArray *)arguments;
 + (id)runWithInstance:(id)instance selector:(NSString *)selector arguments:(NSArray *)arguments;
 
