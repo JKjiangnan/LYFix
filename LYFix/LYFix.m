@@ -41,13 +41,13 @@
         [invocation invoke];
     };
 
-    [self context][@"setInvocationArguments"] = ^(NSInvocation *invocation, NSArray *arguments) {
+    context[@"setInvocationArguments"] = ^(NSInvocation *invocation, NSArray *arguments) {
         invocation.arguments = arguments;
     };
-    [self context][@"setInvocationArgumentAtIndex"] = ^(NSInvocation *invocation, id argument,NSInteger index) {
+    context[@"setInvocationArgumentAtIndex"] = ^(NSInvocation *invocation, id argument,NSInteger index) {
         [invocation setMyArgument:argument atIndex:index];
     };
-    [self context][@"setInvocationReturnValue"] = ^(NSInvocation *invocation, id returnValue) {
+    context[@"setInvocationReturnValue"] = ^(NSInvocation *invocation, id returnValue) {
         invocation.returnValue_obj = returnValue;
     };
     context[@"runError"] = ^(NSString *instanceName, NSString *selectorName) {
