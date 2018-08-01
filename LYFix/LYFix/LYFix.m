@@ -30,19 +30,27 @@
         [self fixWithClassName:className opthios:options selector:selectorName fixImp:fixImp];
     };
     context[@"runMethod"] = ^id(NSString * className, NSString *selectorName, NSArray *arguments) {
-        return [self runWithClassname:className selector:selectorName arguments:arguments];
+        id obj = [self runWithClassname:className selector:selectorName arguments:arguments];
+        NSLog(@"xly--runMethod__className=%@,selectorName=%@,arguments=%@,return=%@",className,selectorName,arguments,obj);
+        return obj;
     };
     context[@"runInstanceMethod"] = ^id(id instance, NSString *selectorName, NSArray *arguments) {
         NSLog(@"xly--%@",@"^^^^^");
       
-        return [self runWithInstance:instance selector:selectorName arguments:arguments];
+        id obj = [self runWithInstance:instance selector:selectorName arguments:arguments];
+        NSLog(@"xly--runInstanceMethod__instance=%@,selectorName=%@,arguments=%@,return=%@",instance,selectorName,arguments,obj);
+        return obj;
     };
     context[@"runInvocation"] = ^(NSInvocation *invocation) {
         [invocation invoke];
     };
 
-    context[@"setInvocationArguments"] = ^(NSInvocation *invocation, NSArray *arguments) {
-        invocation.arguments = arguments;
+    context[@"setInvocationArguments"] = ^(NSInvocation *invocation, id arguments) {
+        if ([arguments isKindOfClass:NSArray.class]) {
+            invocation.arguments = arguments;
+        } else {
+            [invocation setMyArgument:arguments atIndex:0];
+        }
     };
     context[@"setInvocationArgumentAtIndex"] = ^(NSInvocation *invocation, id argument,NSInteger index) {
         [invocation setMyArgument:argument atIndex:index];

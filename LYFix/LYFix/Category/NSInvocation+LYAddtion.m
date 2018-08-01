@@ -222,34 +222,49 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
         case '{': // struct
         {
             if (strcmp(type, @encode(CGPoint)) == 0) {
-                CGPoint point = {0};
-                NSDictionary *dict = obj;
-                set_with_args_struct(dict, point, x, @"x", doubleValue);
-                set_with_args_struct(dict, point, y, @"y", doubleValue);
-            [self setArgument:&point atIndex:index];
+                if ([obj isKindOfClass:NSString.class]) {
+                    CGPoint point = CGPointFromString(obj);
+                    [self setArgument:&point atIndex:index];
+                } else {
+                    CGPoint point = {0};
+                    NSDictionary *dict = obj;
+                    set_with_args_struct(dict, point, x, @"x", doubleValue);
+                    set_with_args_struct(dict, point, y, @"y", doubleValue);
+                    [self setArgument:&point atIndex:index];
+                }
             } else if (strcmp(type, @encode(CGSize)) == 0) {
-                CGSize size = {0};
-                
-                NSDictionary *dict = obj;
-                set_with_args_struct(dict, size, width, @"width", doubleValue);
-                set_with_args_struct(dict, size, height, @"height", doubleValue);
-                [self setArgument:&size atIndex:index];
+                if ([obj isKindOfClass:NSString.class]) {
+                    CGSize size = CGSizeFromString(obj);
+                    [self setArgument:&size atIndex:index];
+                } else {
+                    CGSize size = {0};
+                    
+                    NSDictionary *dict = obj;
+                    set_with_args_struct(dict, size, width, @"width", doubleValue);
+                    set_with_args_struct(dict, size, height, @"height", doubleValue);
+                    [self setArgument:&size atIndex:index];
+                }
             } else if (strcmp(type, @encode(CGRect)) == 0) {
-                CGRect rect;
-                CGPoint origin = {0};
-                CGSize size = {0};
-                
-                NSDictionary *dict = obj;
-                NSDictionary *pDict = dict[@"origin"];
-                set_with_args_struct(pDict, origin, x, @"x", doubleValue);
-                set_with_args_struct(pDict, origin, y, @"y", doubleValue);
-                
-                NSDictionary *sDict = dict[@"size"];
-                set_with_args_struct(sDict, size, width, @"width", doubleValue);
-                set_with_args_struct(sDict, size, height, @"height", doubleValue);
-                rect.origin = origin;
-                rect.size = size;
-                [self setArgument:&rect atIndex:index];
+                if ([obj isKindOfClass:NSString.class]) {
+                    CGRect rect = CGRectFromString(obj);
+                    [self setArgument:&rect atIndex:index];
+                } else {
+                    CGRect rect;
+                    CGPoint origin = {0};
+                    CGSize size = {0};
+                    
+                    NSDictionary *dict = obj;
+                    NSDictionary *pDict = dict[@"origin"];
+                    set_with_args_struct(pDict, origin, x, @"x", doubleValue);
+                    set_with_args_struct(pDict, origin, y, @"y", doubleValue);
+                    
+                    NSDictionary *sDict = dict[@"size"];
+                    set_with_args_struct(sDict, size, width, @"width", doubleValue);
+                    set_with_args_struct(sDict, size, height, @"height", doubleValue);
+                    rect.origin = origin;
+                    rect.size = size;
+                    [self setArgument:&rect atIndex:index];
+                }
             } else if (strcmp(type, @encode(CGVector)) == 0) {
                 CGVector vector = {0};
                 
@@ -291,29 +306,42 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
                 set_with_args_struct(dict, form3D, m44, @"m44", doubleValue);
                 [self setArgument:&form3D atIndex:index];
             } else if (strcmp(type, @encode(NSRange)) == 0) {
-                NSRange range = {0};
-                
-                NSDictionary *dict = obj;
-                set_with_args_struct(dict, range, location, @"location", unsignedIntegerValue);
-                set_with_args_struct(dict, range, length, @"length", unsignedIntegerValue);
-                [self setArgument:&range atIndex:index];
+                if ([obj isKindOfClass:NSString.class]) {
+                    NSRange range = NSRangeFromString(obj);
+                    [self setArgument:&range atIndex:index];
+                } else {
+                    NSRange range = {0};
+                    
+                    NSDictionary *dict = obj;
+                    set_with_args_struct(dict, range, location, @"location", unsignedIntegerValue);
+                    set_with_args_struct(dict, range, length, @"length", unsignedIntegerValue);
+                    [self setArgument:&range atIndex:index];
+                }
             } else if (strcmp(type, @encode(UIOffset)) == 0) {
-                UIOffset offset = {0};
-                
-                
-                NSDictionary *dict = obj;
-                set_with_args_struct(dict, offset, horizontal, @"horizontal", doubleValue);
-                set_with_args_struct(dict, offset, vertical, @"vertical", doubleValue);
-                [self setArgument:&offset atIndex:index];
+                if ([obj isKindOfClass:NSString.class]) {
+                    UIOffset offset = UIOffsetFromString(obj);
+                    [self setArgument:&offset atIndex:index];
+                } else {
+                    UIOffset offset = {0};
+                    NSDictionary *dict = obj;
+                    set_with_args_struct(dict, offset, horizontal, @"horizontal", doubleValue);
+                    set_with_args_struct(dict, offset, vertical, @"vertical", doubleValue);
+                    [self setArgument:&offset atIndex:index];
+                }
             } else if (strcmp(type, @encode(UIEdgeInsets)) == 0) {
-                UIEdgeInsets insets = {0};
-                
-                NSDictionary *dict = obj;
-                set_with_args_struct(dict, insets, top, @"top", doubleValue);
-                set_with_args_struct(dict, insets, left, @"left", doubleValue);
-                set_with_args_struct(dict, insets, bottom, @"bottom", doubleValue);
-                set_with_args_struct(dict, insets, right, @"right", doubleValue);
-                [self setArgument:&insets atIndex:index];
+                if ([obj isKindOfClass:NSString.class]) {
+                    UIEdgeInsets insets = UIEdgeInsetsFromString(obj);
+                    [self setArgument:&insets atIndex:index];
+                } else {
+                    UIEdgeInsets insets = {0};
+                    
+                    NSDictionary *dict = obj;
+                    set_with_args_struct(dict, insets, top, @"top", doubleValue);
+                    set_with_args_struct(dict, insets, left, @"left", doubleValue);
+                    set_with_args_struct(dict, insets, bottom, @"bottom", doubleValue);
+                    set_with_args_struct(dict, insets, right, @"right", doubleValue);
+                    [self setArgument:&insets atIndex:index];
+                }
             } else {
                 unsupportedType = YES;
             }

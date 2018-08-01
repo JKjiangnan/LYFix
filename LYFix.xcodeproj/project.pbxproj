@@ -36,6 +36,8 @@
 		5F8C29CA21103F50007A99C9 /* runInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29C821103F50007A99C9 /* runInstanceMethod.js */; };
 		5F8C29CC21104361007A99C9 /* runWithInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29CB21104360007A99C9 /* runWithInstanceMethod.js */; };
 		5F8C29CE2110617C007A99C9 /* runWithParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29CD2110617C007A99C9 /* runWithParams.js */; };
+		5F8C2A10211187A3007A99C9 /* UIView+LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C2A0F211187A3007A99C9 /* UIView+LYFix.m */; };
+		5F8C2A14211188F2007A99C9 /* LYFixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C2A13211188F2007A99C9 /* LYFixCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,10 @@
 		5F8C29C821103F50007A99C9 /* runInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runInstanceMethod.js; sourceTree = "<group>"; };
 		5F8C29CB21104360007A99C9 /* runWithInstanceMethod.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runWithInstanceMethod.js; sourceTree = "<group>"; };
 		5F8C29CD2110617C007A99C9 /* runWithParams.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = runWithParams.js; sourceTree = "<group>"; };
+		5F8C2A0E211187A3007A99C9 /* UIView+LYFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYFix.h"; sourceTree = "<group>"; };
+		5F8C2A0F211187A3007A99C9 /* UIView+LYFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYFix.m"; sourceTree = "<group>"; };
+		5F8C2A12211188F2007A99C9 /* LYFixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFixCategory.h; sourceTree = "<group>"; };
+		5F8C2A13211188F2007A99C9 /* LYFixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFixCategory.m; sourceTree = "<group>"; };
 		637285A38C4532009A97E4C0 /* libPods-LYFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E38880328684FFEBB5ADCD /* Pods-LYFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.debug.xcconfig"; sourceTree = "<group>"; };
 		D06D0509EB31CA7AD27C6C85 /* Pods-LYFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,11 +230,23 @@
 			children = (
 				5F518D5521088D95008D4C5A /* LYFix.h */,
 				5F518D5621088D95008D4C5A /* LYFix.m */,
-				5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */,
-				5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */,
+				5F8C2A0D2111877F007A99C9 /* Category */,
 				5F8C29B72110320E007A99C9 /* AspectsFix */,
 			);
 			path = LYFix;
+			sourceTree = "<group>";
+		};
+		5F8C2A0D2111877F007A99C9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5F8C2A12211188F2007A99C9 /* LYFixCategory.h */,
+				5F8C2A13211188F2007A99C9 /* LYFixCategory.m */,
+				5F518D952109C4D9008D4C5A /* NSInvocation+LYAddtion.h */,
+				5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */,
+				5F8C2A0E211187A3007A99C9 /* UIView+LYFix.h */,
+				5F8C2A0F211187A3007A99C9 /* UIView+LYFix.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		87E1CEA29764AF541A67AD10 /* Frameworks */ = {
@@ -417,10 +435,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F8C29C12110323D007A99C9 /* Test.m in Sources */,
+				5F8C2A10211187A3007A99C9 /* UIView+LYFix.m in Sources */,
 				5F518D972109C4D9008D4C5A /* NSInvocation+LYAddtion.m in Sources */,
 				5F518CE4210883CE008D4C5A /* ViewController.m in Sources */,
 				5F518CEF210883CF008D4C5A /* main.m in Sources */,
 				5F8C29BE2110320E007A99C9 /* Aspects.m in Sources */,
+				5F8C2A14211188F2007A99C9 /* LYFixCategory.m in Sources */,
 				5F518D5721088D95008D4C5A /* LYFix.m in Sources */,
 				5F518CE1210883CE008D4C5A /* AppDelegate.m in Sources */,
 			);

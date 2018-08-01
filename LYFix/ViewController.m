@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, strong) UIView *myView;
 
 @end
 
@@ -22,7 +23,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [UIColor respondsToSelector:@selector(colorWithRed:green:blue:alpha:)];
+    
+    UILabel *label = [UILabel new];
+    
+//    CGRect re =  {{20,20},{50,50}};
+//    [label setFrame: {{20,20},{50,50}}];
+////    [label sizeToFit]
+    
+    NSLog(@"xly--%@",NSStringFromCGRect(CGRectMake(100, 101, 102, 103)));
+    
+     self.myView = self.view;
+     [self.myView setBackgroundColor:[UIColor redColor]];
     self.dataSource = @[@"instanceMethodCrash",@"calssMethodCrash",@"runBeforeClassMethod",@"runBeforeInstanceMethod",@"runAfterInstanceMethod",@"runAfterClassMethod",@"runInsteadClassMethod",@"runInsteadInstanceMethod",@"changePrames",@"changeReturnValue"].mutableCopy;
     
     static dispatch_once_t onceToken;
@@ -40,9 +51,11 @@
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
+    _tableView.frame = CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height - 50);
     [self.view addSubview:_tableView];
 
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataSource.count;
