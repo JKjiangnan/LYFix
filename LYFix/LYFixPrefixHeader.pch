@@ -1,0 +1,17 @@
+//
+//  LYFixPrefixHeader.pch
+//  LYFix
+//
+//  Created by xly on 2018/8/1.
+//  Copyright © 2018年 Xly. All rights reserved.
+//
+
+#ifndef LYFixPrefixHeader_pch
+#define LYFixPrefixHeader_pch
+
+#import "NSObject+LYFix.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LYFixPrefixHeader_pch */

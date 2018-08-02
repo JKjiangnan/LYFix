@@ -38,6 +38,7 @@
 		5F8C29CE2110617C007A99C9 /* runWithParams.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C29CD2110617C007A99C9 /* runWithParams.js */; };
 		5F8C2A10211187A3007A99C9 /* UIView+LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C2A0F211187A3007A99C9 /* UIView+LYFix.m */; };
 		5F8C2A14211188F2007A99C9 /* LYFixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C2A13211188F2007A99C9 /* LYFixCategory.m */; };
+		5F8C2A1721119F2D007A99C9 /* NSObject+LYFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C2A1621119F2D007A99C9 /* NSObject+LYFix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,9 @@
 		5F8C2A0F211187A3007A99C9 /* UIView+LYFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYFix.m"; sourceTree = "<group>"; };
 		5F8C2A12211188F2007A99C9 /* LYFixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFixCategory.h; sourceTree = "<group>"; };
 		5F8C2A13211188F2007A99C9 /* LYFixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFixCategory.m; sourceTree = "<group>"; };
+		5F8C2A1521119F2D007A99C9 /* NSObject+LYFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LYFix.h"; sourceTree = "<group>"; };
+		5F8C2A1621119F2D007A99C9 /* NSObject+LYFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LYFix.m"; sourceTree = "<group>"; };
+		5F8C2A182111D06C007A99C9 /* LYFixPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFixPrefixHeader.pch; sourceTree = "<group>"; };
 		637285A38C4532009A97E4C0 /* libPods-LYFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E38880328684FFEBB5ADCD /* Pods-LYFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.debug.xcconfig"; sourceTree = "<group>"; };
 		D06D0509EB31CA7AD27C6C85 /* Pods-LYFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFix.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYFix/Pods-LYFix.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				5F8C2980210F2F73007A99C9 /* JS */,
 				5F8C29BF2110323D007A99C9 /* Test.h */,
 				5F8C29C02110323D007A99C9 /* Test.m */,
+				5F8C2A182111D06C007A99C9 /* LYFixPrefixHeader.pch */,
 				5F518CE5210883CE008D4C5A /* Main.storyboard */,
 				5F518CE8210883CF008D4C5A /* Assets.xcassets */,
 				5F518CEA210883CF008D4C5A /* LaunchScreen.storyboard */,
@@ -245,6 +250,8 @@
 				5F518D962109C4D9008D4C5A /* NSInvocation+LYAddtion.m */,
 				5F8C2A0E211187A3007A99C9 /* UIView+LYFix.h */,
 				5F8C2A0F211187A3007A99C9 /* UIView+LYFix.m */,
+				5F8C2A1521119F2D007A99C9 /* NSObject+LYFix.h */,
+				5F8C2A1621119F2D007A99C9 /* NSObject+LYFix.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -438,6 +445,7 @@
 				5F8C2A10211187A3007A99C9 /* UIView+LYFix.m in Sources */,
 				5F518D972109C4D9008D4C5A /* NSInvocation+LYAddtion.m in Sources */,
 				5F518CE4210883CE008D4C5A /* ViewController.m in Sources */,
+				5F8C2A1721119F2D007A99C9 /* NSObject+LYFix.m in Sources */,
 				5F518CEF210883CF008D4C5A /* main.m in Sources */,
 				5F8C29BE2110320E007A99C9 /* Aspects.m in Sources */,
 				5F8C2A14211188F2007A99C9 /* LYFixCategory.m in Sources */,
@@ -613,6 +621,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LYFix/LYFixPrefixHeader.pch";
 				INFOPLIST_FILE = LYFix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -630,6 +640,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LYFix/LYFixPrefixHeader.pch";
 				INFOPLIST_FILE = LYFix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

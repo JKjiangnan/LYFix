@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UIView+LYFix.h"
-
+#import "NSObject+LYFix.h"
 
 @interface LYFixCategory : NSObject
 

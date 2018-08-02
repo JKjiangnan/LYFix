@@ -10,5 +10,13 @@
 
 @implementation UIView (LYFix)
 
+- (NSString *)fixTag {
+    if (self.hadSetFixTag == NO) {
+        if (self.tag != 0) {
+            return [NSString stringWithFormat:@"%@%ld",NSStringFromClass(self.class),self.tag];
+        }
+    }
+    return [super fixTag];
+}
 
 @end

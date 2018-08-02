@@ -70,7 +70,6 @@
     cell.textLabel.text = self.dataSource[indexPath.row];
     return cell;
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *js = self.dataSource[indexPath.row];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -100,6 +99,9 @@
         NSString *jsPath = [[NSBundle mainBundle] pathForResource:js ofType:@"js"];
         NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
         [LYFix evalString:jsString];
+        NSLog(@"xly--self=== %@",self);
+//        [self lyFix];
+
     } else if ([js isEqualToString:@"runWithParams"]) {
         NSString *jsPath = [[NSBundle mainBundle] pathForResource:js ofType:@"js"];
         NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
@@ -111,6 +113,7 @@
         [LYFix runWithClassname:@"Test" selector:js arguments:nil];
     }
 }
+
 
 + (UIViewController *)currentViewController {
     __block UIViewController *currentVC = nil;

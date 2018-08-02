@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [LYFix Fix];
+    NSString *jsPath = [[NSBundle mainBundle] pathForResource:@"runWithInstanceMethod" ofType:@"js"];
+    NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
+    [LYFix evalString:jsString];
     return YES;
 }
 
