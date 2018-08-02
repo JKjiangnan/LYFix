@@ -41,7 +41,6 @@
     };
     context[@"runMethod"] = ^id(NSString * className, NSString *selectorName, NSArray *arguments) {
         id obj = [self runWithClassname:className selector:selectorName arguments:arguments];
-        NSLog(@"xly--runMethod__className = %@,selectorName = %@,arguments = %@,return = %@",className,selectorName,arguments,obj);
         return obj;
     };
     
@@ -50,10 +49,7 @@
     };
     
     context[@"runInstanceMethod"] = ^id(id instance, NSString *selectorName, NSArray *arguments) {
-        NSLog(@"xly--%@",@"^^^^^");
-      
         id obj = [self runWithInstance:instance selector:selectorName arguments:arguments];
-        NSLog(@"xly--runInstanceMethod__instance = %@,selectorName = %@,arguments = %@,return = %@",instance,selectorName,arguments,obj);
         return obj;
     };
     context[@"runInvocation"] = ^(NSInvocation *invocation) {
@@ -110,7 +106,6 @@
     }
     SEL sel = NSSelectorFromString(selector);
 
-    NSLog(@"xly--%@",[instance class]);
     if ([instance isKindOfClass:JSValue.class]) {
         instance = [instance toObject];
     }
