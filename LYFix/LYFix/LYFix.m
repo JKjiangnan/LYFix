@@ -26,14 +26,14 @@
 
 + (void)Fix {
 
-    [UIViewController aspect_hookSelector:@selector(setTitle:) withOptions:0 usingBlock:^(id<AspectInfo> aspectInfo) {
-        UIViewController *vc = aspectInfo.instance;
-        NSArray *params = aspectInfo.arguments;
-        if (params && params.count) {
-            vc.fixTag = [params firstObject];
-        }
-    } error:nil];
-    
+//    [UIViewController aspect_hookSelector:@selector(setTitle:) withOptions:0 usingBlock:^(id<AspectInfo> aspectInfo) {
+//        UIViewController *vc = aspectInfo.instance;
+//        NSArray *params = aspectInfo.arguments;
+//        if (params && params.count) {
+//            vc.fixTag = [params firstObject];
+//        }
+//    } error:nil];
+//
     
     JSContext *context = [self context];
     context[@"fixMethod"] = ^(NSString *className, NSString *selectorName, AspectOptions options, JSValue *fixImp) {

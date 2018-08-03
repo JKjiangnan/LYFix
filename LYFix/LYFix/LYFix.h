@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
-#import "LYFixCategory.h"
 
 @interface LYFix : NSObject
 
