@@ -39,19 +39,19 @@
     context[@"fixMethod"] = ^(NSString *className, NSString *selectorName, AspectOptions options, JSValue *fixImp) {
         [self fixWithClassName:className opthios:options selector:selectorName fixImp:fixImp];
     };
-    context[@"runMethod"] = ^id(NSString * className, NSString *selectorName, NSArray *arguments) {
+    context[@"runMethod"] = ^id(NSString * className, NSString *selectorName, id arguments) {
         id obj = [self runWithClassname:className selector:selectorName arguments:arguments];
         return obj;
     };
     
-    context[@"run"] = ^(NSString *className,JSValue *fixImp) {
-       [self fixWithClassName:className opthios:0 selector:@"lyFix" fixImp:fixImp];
-    };
-    
-    context[@"runInstanceMethod"] = ^id(id instance, NSString *selectorName, NSArray *arguments) {
+//    context[@"run"] = ^(NSString *className,JSValue *fixImp) {
+//       [self fixWithClassName:className opthios:0 selector:@"lyFix" fixImp:fixImp];
+//    };
+    context[@"runInstanceMethod"] = ^id(id instance, NSString *selectorName, id arguments) {
         id obj = [self runWithInstance:instance selector:selectorName arguments:arguments];
         return obj;
     };
+    
     context[@"runInvocation"] = ^(NSInvocation *invocation) {
         [invocation invoke];
     };
@@ -104,6 +104,9 @@
     if (!instance) {
         return nil;
     }
+    if (arguments && [arguments isKindOfClass:NSArray.class] == NO) {
+        arguments = @[arguments];
+    }
     SEL sel = NSSelectorFromString(selector);
 
     if ([instance isKindOfClass:JSValue.class]) {
@@ -123,6 +126,9 @@
 + (id)runWithClassname:(NSString *)className selector:(NSString *)selector arguments:(NSArray *)arguments {
     Class cla = NSClassFromString(className);
     SEL sel = NSSelectorFromString(selector);
+    if (arguments && [arguments isKindOfClass:NSArray.class] == NO) {
+        arguments = @[arguments];
+    }
     if ([cla instancesRespondToSelector:sel]) {
         id instance = [[cla alloc] init];
         NSMethodSignature *signature = [instance methodSignatureForSelector:sel];
