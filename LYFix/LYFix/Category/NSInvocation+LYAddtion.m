@@ -226,10 +226,7 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
                     CGPoint point = CGPointFromString(obj);
                     [self setArgument:&point atIndex:index];
                 } else {
-                    CGPoint point = {0};
-                    NSDictionary *dict = obj;
-                    set_with_args_struct(dict, point, x, @"x", doubleValue);
-                    set_with_args_struct(dict, point, y, @"y", doubleValue);
+                    CGPoint point = [obj CGPointValue];
                     [self setArgument:&point atIndex:index];
                 }
             } else if (strcmp(type, @encode(CGSize)) == 0) {
@@ -237,11 +234,7 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
                     CGSize size = CGSizeFromString(obj);
                     [self setArgument:&size atIndex:index];
                 } else {
-                    CGSize size = {0};
-                    
-                    NSDictionary *dict = obj;
-                    set_with_args_struct(dict, size, width, @"width", doubleValue);
-                    set_with_args_struct(dict, size, height, @"height", doubleValue);
+                    CGSize size = [obj CGSizeValue];
                     [self setArgument:&size atIndex:index];
                 }
             } else if (strcmp(type, @encode(CGRect)) == 0) {
@@ -250,19 +243,7 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
                     [self setArgument:&rect atIndex:index];
                 } else {
                     CGRect rect;
-                    CGPoint origin = {0};
-                    CGSize size = {0};
-                    
-                    NSDictionary *dict = obj;
-                    NSDictionary *pDict = dict[@"origin"];
-                    set_with_args_struct(pDict, origin, x, @"x", doubleValue);
-                    set_with_args_struct(pDict, origin, y, @"y", doubleValue);
-                    
-                    NSDictionary *sDict = dict[@"size"];
-                    set_with_args_struct(sDict, size, width, @"width", doubleValue);
-                    set_with_args_struct(sDict, size, height, @"height", doubleValue);
-                    rect.origin = origin;
-                    rect.size = size;
+                    rect = [obj CGRectValue];
                     [self setArgument:&rect atIndex:index];
                 }
             } else if (strcmp(type, @encode(CGVector)) == 0) {
@@ -310,11 +291,7 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
                     NSRange range = NSRangeFromString(obj);
                     [self setArgument:&range atIndex:index];
                 } else {
-                    NSRange range = {0};
-                    
-                    NSDictionary *dict = obj;
-                    set_with_args_struct(dict, range, location, @"location", unsignedIntegerValue);
-                    set_with_args_struct(dict, range, length, @"length", unsignedIntegerValue);
+                    NSRange range = [obj rangeValue];
                     [self setArgument:&range atIndex:index];
                 }
             } else if (strcmp(type, @encode(UIOffset)) == 0) {
@@ -322,10 +299,7 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
                     UIOffset offset = UIOffsetFromString(obj);
                     [self setArgument:&offset atIndex:index];
                 } else {
-                    UIOffset offset = {0};
-                    NSDictionary *dict = obj;
-                    set_with_args_struct(dict, offset, horizontal, @"horizontal", doubleValue);
-                    set_with_args_struct(dict, offset, vertical, @"vertical", doubleValue);
+                    UIOffset offset = [obj UIOffsetValue];
                     [self setArgument:&offset atIndex:index];
                 }
             } else if (strcmp(type, @encode(UIEdgeInsets)) == 0) {
@@ -333,13 +307,7 @@ _struct_._param_ = [_dic_[_key_] _sel_]; \
                     UIEdgeInsets insets = UIEdgeInsetsFromString(obj);
                     [self setArgument:&insets atIndex:index];
                 } else {
-                    UIEdgeInsets insets = {0};
-                    
-                    NSDictionary *dict = obj;
-                    set_with_args_struct(dict, insets, top, @"top", doubleValue);
-                    set_with_args_struct(dict, insets, left, @"left", doubleValue);
-                    set_with_args_struct(dict, insets, bottom, @"bottom", doubleValue);
-                    set_with_args_struct(dict, insets, right, @"right", doubleValue);
+                    UIEdgeInsets insets = [obj UIEdgeInsetsValue];
                     [self setArgument:&insets atIndex:index];
                 }
             } else {

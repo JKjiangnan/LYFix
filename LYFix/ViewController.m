@@ -15,7 +15,8 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
-@property (nonatomic, strong) UIView *myView;
+@property (nonatomic, assign) NSRange range;
+//@property (nonatomic, strong) UIView *myView;
 
 @end
 
@@ -24,36 +25,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UILabel *label = [UILabel new];
-    
-//    CGRect re =  {{20,20},{50,50}};
-//    [label setFrame: {{20,20},{50,50}}];
-////    [label sizeToFit]
-    
-    NSLog(@"xly--%@",NSStringFromCGRect(CGRectMake(100, 101, 102, 103)));
-    
-     self.myView = self.view;
-     [self.myView setBackgroundColor:[UIColor redColor]];
-    self.dataSource = @[@"instanceMethodCrash",@"calssMethodCrash",@"runBeforeClassMethod",@"runBeforeInstanceMethod",@"runAfterInstanceMethod",@"runAfterClassMethod",@"runInsteadClassMethod",@"runInsteadInstanceMethod",@"changePrames",@"changeReturnValue"].mutableCopy;
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        for (NSString *js1 in self.dataSource) {
-            NSString *jsPath = [[NSBundle mainBundle] pathForResource:js1 ofType:@"js"];
-            NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
-            [LYFix evalString:jsString];
-        }
-    });
+//    NSStringFromClass(<#Class  _Nonnull __unsafe_unretained aClass#>)
+//    NSRange range = NSMakeRange(0, 10);
+////    CGRect re =  {{20,20},{50,50}};
+////    [label setFrame: {{20,20},{50,50}}];
+//////    [label sizeToFit]
+//
+//    NSLog(@"xly--%@",NSStringFromCGRect(CGRectMake(100, 101, 102, 103)));
+//
+//     self.myView = self.view;
+//     [self.myView setBackgroundColor:[UIColor redColor]];
+//    self.dataSource = @[@"instanceMethodCrash",@"calssMethodCrash",@"runBeforeClassMethod",@"runBeforeInstanceMethod",@"runAfterInstanceMethod",@"runAfterClassMethod",@"runInsteadClassMethod",@"runInsteadInstanceMethod",@"changePrames",@"changeReturnValue"].mutableCopy;
+//
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        for (NSString *js1 in self.dataSource) {
+//            NSString *jsPath = [[NSBundle mainBundle] pathForResource:js1 ofType:@"js"];
+//            NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
+//            [LYFix evalString:jsString];
+//        }
+//    });
+//
+//    NSArray *runArray = @[@"runClassMethod",@"runInstanceMethod",@"runWithInstanceMethod",@"runWithParams"];
+//    [self.dataSource addObjectsFromArray:runArray];
+//    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+//    _tableView.dataSource = self;
+//    _tableView.delegate = self;
+//    _tableView.frame = CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height - 50);
+//    [self.view addSubview:_tableView];
+//
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    label.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:label];
 
-    NSArray *runArray = @[@"runClassMethod",@"runInstanceMethod",@"runWithInstanceMethod",@"runWithParams"];
-    [self.dataSource addObjectsFromArray:runArray];
-    
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
-    _tableView.frame = CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height - 50);
-    [self.view addSubview:_tableView];
-
+//    NSLog(@"xly--%@",[self.tableView contentOffset]);
+//    [self.tableView setContentOffset:<#(CGPoint)#>];
 }
 
 

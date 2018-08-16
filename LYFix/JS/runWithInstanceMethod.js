@@ -1,10 +1,49 @@
 var self;
-fixMethod('ViewController','viewDidLoad',0,function(instance,invocation,arg){
+fixMethod('ViewController','viewDidLoad',1,function(instance,invocation,arg){
           var co = new Array(Math.random(),Math.random(),Math.random(),Math.random());
           var color = runMethod('UIColor','colorWithRed:green:blue:alpha:',co);
           var view = runInstanceMethod(instance,'view');
           self = instance;
+          var view = runInstanceMethod(self,'view');
           runInstanceMethod(view,'setBackgroundColor:',new Array(color));
+          var dataSource = new Array('instanceMethodCrash','calssMethodCrash','runBeforeClassMethod','runBeforeInstanceMethod','runAfterInstanceMethod','runAfterClassMethod','runInsteadClassMethod','runInsteadInstanceMethod','changePrames','changeReturnValue');
+         var datas = runInstanceMethod(dataSource,'mutableCopy');
+      
+
+          for (var i = 0;i < dataSource.length;i ++) {
+          var budle = runMethod('NSBundle','mainBundle');
+          var jsPath = runInstanceMethod(budle,'pathForResource:ofType:',new Array(dataSource[i],'js'));
+          var jsString = runMethod('NSString','stringWithContentsOfFile:encoding:error:',new Array(jsPath,'4'));
+          runMethod('LYFix','evalString:',jsString);
+          runLog(jsString);
+          }
+     datas.push('runClassMethod','runInstanceMethod','runWithInstanceMethod','runWithParams');
+          runInstanceMethod(self,'setDataSource:',new Array(datas));
+          var selfDataSource = runInstanceMethod(self,'dataSource');
+          runLog(datas);
+          runLog(selfDataSource);
+          var tableView = runMethod('UITableView','alloc');
+          var bounds = runInstanceMethod(view,'bounds');
+          
+//          runLog(bounds);
+//
+//          var range = runInstanceMethod(self,'range');
+//          runLog(range);
+//
+//          var ra = NSMakeRange(0, 10);
+//          runLog(ra);
+//          var block = ^(id str) {NSLog(@"xly--%@",@"1222");return str;};
+//          
+//          runBlock(block);
+          
+          
+//          runInstanceMethod(self,'setRange:',range);
+          
+          runInstanceMethod(tableView,'initWithFrame:style:',new Array(bounds,'0'));
+          runInstanceMethod(tableView,'setDataSource:',self);
+          runInstanceMethod(tableView,'setDelegate:',self);
+          runInstanceMethod(tableView,'setFrame:',bounds);
+          runInstanceMethod(view,'addSubview:',tableView);
           });
 
 
@@ -12,7 +51,7 @@ fixMethod('ViewController','tableView:didSelectRowAtIndexPath:',0,function(insta
           //          runError(self, 'calssMethodCrash');
           var co = new Array(Math.random(),Math.random(),Math.random(),Math.random());
           var color = runMethod('UIColor','colorWithRed:green:blue:alpha:',co);
-          var view = runInstanceMethod(instance,'tableView');
+          var view = runInstanceMethod(instance,'view');
           //          runError(view, 'viewaaa');
           var label = runMethod('UILabel','new');
           runInstanceMethod(label,'setFrame:',new Array('{{100, 100}, {100, 100}}'));
