@@ -25,15 +25,6 @@
 }
 
 + (void)Fix {
-
-//    [UIViewController aspect_hookSelector:@selector(setTitle:) withOptions:0 usingBlock:^(id<AspectInfo> aspectInfo) {
-//        UIViewController *vc = aspectInfo.instance;
-//        NSArray *params = aspectInfo.arguments;
-//        if (params && params.count) {
-//            vc.fixTag = [params firstObject];
-//        }
-//    } error:nil];
-//
     
     JSContext *context = [self context];
     context[@"fixMethod"] = ^(NSString *className, NSString *selectorName, AspectOptions options, JSValue *fixImp) {
@@ -43,12 +34,14 @@
         id obj = [self runWithClassname:className selector:selectorName arguments:arguments];
         return obj;
     };
-    
-//    context[@"run"] = ^(NSString *className,JSValue *fixImp) {
-//       [self fixWithClassName:className opthios:0 selector:@"lyFix" fixImp:fixImp];
-//    };
+
     context[@"runInstanceMethod"] = ^id(id instance, NSString *selectorName, id arguments) {
         id obj = [self runWithInstance:instance selector:selectorName arguments:arguments];
+        return obj;
+    };
+    
+    context[@"runClassMethod"] = ^id(NSString * className, NSString *selectorName, id arguments) {
+        id obj = [self runWithClassname:className selector:selectorName arguments:arguments];
         return obj;
     };
     
@@ -71,6 +64,9 @@
     };
     context[@"runError"] = ^(NSString *instanceName, NSString *selectorName) {
         NSLog(@"runError: instanceName = %@, selectorName = %@", instanceName, selectorName);
+    };
+    context[@"runLog"] = ^(id logs) {
+        NSLog(@"xly--%@",logs);
     };
 }
 

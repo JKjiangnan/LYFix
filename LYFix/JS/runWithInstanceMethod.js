@@ -24,21 +24,7 @@ fixMethod('ViewController','viewDidLoad',1,function(instance,invocation,arg){
           runLog(selfDataSource);
           var tableView = runMethod('UITableView','alloc');
           var bounds = runInstanceMethod(view,'bounds');
-          
-//          runLog(bounds);
-//
-//          var range = runInstanceMethod(self,'range');
-//          runLog(range);
-//
-//          var ra = NSMakeRange(0, 10);
-//          runLog(ra);
-//          var block = ^(id str) {NSLog(@"xly--%@",@"1222");return str;};
-//          
-//          runBlock(block);
-          
-          
-//          runInstanceMethod(self,'setRange:',range);
-          
+        
           runInstanceMethod(tableView,'initWithFrame:style:',new Array(bounds,'0'));
           runInstanceMethod(tableView,'setDataSource:',self);
           runInstanceMethod(tableView,'setDelegate:',self);
@@ -54,7 +40,9 @@ fixMethod('ViewController','tableView:didSelectRowAtIndexPath:',0,function(insta
           var view = runInstanceMethod(instance,'view');
           //          runError(view, 'viewaaa');
           var label = runMethod('UILabel','new');
-          runInstanceMethod(label,'setFrame:',new Array('{{100, 100}, {100, 100}}'));
+          var fra = runInstanceMethod(view,'frame');
+//          runInstanceMethod(label,'setFrame:',new Array('{{100, 100}, {100, 100}}'));
+          runInstanceMethod(label,'setFrame:',fra);
           runInstanceMethod(label,'setText:','test');
           runInstanceMethod(view,'addSubview:',label);
           runInstanceMethod(label,'setBackgroundColor:',new Array(color));
