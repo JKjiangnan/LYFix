@@ -40,9 +40,9 @@ fixMethod('ViewController','tableView:didSelectRowAtIndexPath:',0,function(insta
           var view = runInstanceMethod(instance,'view');
           //          runError(view, 'viewaaa');
           var label = runMethod('UILabel','new');
-          var fra = runInstanceMethod(view,'frame');
-//          runInstanceMethod(label,'setFrame:',new Array('{{100, 100}, {100, 100}}'));
-          runInstanceMethod(label,'setFrame:',fra);
+//          var fra = runInstanceMethod(view,'frame');
+          runInstanceMethod(label,'setFrame:',new Array('{{100, 100}, {100, 100}}'));
+//          runInstanceMethod(label,'setFrame:',fra);
           runInstanceMethod(label,'setText:','test');
           runInstanceMethod(view,'addSubview:',label);
           runInstanceMethod(label,'setBackgroundColor:',new Array(color));
